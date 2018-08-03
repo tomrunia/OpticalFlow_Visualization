@@ -111,7 +111,6 @@ def flow_compute_color(u, v, convert_to_bgr=False):
     return flow_image
 
 
-
 def flow_to_color(flow_uv, clip_flow=None, convert_to_bgr=False):
     '''
     Expects a two dimensional flow image of shape [H,W,2]
