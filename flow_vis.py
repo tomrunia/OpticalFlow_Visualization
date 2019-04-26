@@ -90,7 +90,7 @@ def flow_compute_color(u, v, convert_to_bgr=False):
     fk = (a+1) / 2*(ncols-1)
     k0 = np.floor(fk).astype(np.int32)
     k1 = k0 + 1
-    k1[k1 == ncols] = 1
+    k1[k1 == ncols] = 0
     f = fk - k0
 
     for i in range(colorwheel.shape[1]):
