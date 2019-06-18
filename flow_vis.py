@@ -87,10 +87,10 @@ def flow_compute_color(u, v, convert_to_bgr=False):
     rad = np.sqrt(np.square(u) + np.square(v))
     a = np.arctan2(-v, -u)/np.pi
 
-    fk = (a+1) / 2*(ncols-1) + 1
+    fk = (a+1) / 2*(ncols-1)
     k0 = np.floor(fk).astype(np.int32)
     k1 = k0 + 1
-    k1[k1 == ncols] = 1
+    k1[k1 == ncols] = 0
     f = fk - k0
 
     for i in range(colorwheel.shape[1]):
