@@ -9,9 +9,16 @@ A database and evaluation methodology for optical flow.
 In Proc. IEEE International Conference on Computer Vision (ICCV), 2007.
 ```
 
+## Installation
+
+    pip install flowvis
+
 ## Usage
 
-One-liner: `flow_color = flow_vis.flow_to_color(flow_uv, convert_to_bgr=False)`
+One-liner:
+
+    import flowvis
+    flow_color = flowvis.flow_to_color(flow_uv, convert_to_bgr=False)
 
 ## Examples visualizations
 
