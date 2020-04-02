@@ -16,4 +16,4 @@ from __future__ import absolute_import
 from __future__ import division
 from __future__ import print_function
 
-from .flowvis import flow_to_color, flow_uv_to_colors, make_colorwheel
+from .flow_vis import flow_to_color, flow_uv_to_colors, make_colorwheel

@@ -18,13 +18,13 @@ from __future__ import print_function
 
 import numpy as np
 import matplotlib.pyplot as plt
-import flowvis
+import flow_vis
 
 # Load normalized flow image of shape [H,W,2]
 flow_uv = np.load('./data/flow_example_data.npy')
 
 # Apply the coloring (for OpenCV, set convert_to_bgr=True)
-flow_color = flowvis.flow_to_color(flow_uv, convert_to_bgr=False)
+flow_color = flow_vis.flow_to_color(flow_uv, convert_to_bgr=False)
 
 # Display the image
 plt.imshow(flow_color)

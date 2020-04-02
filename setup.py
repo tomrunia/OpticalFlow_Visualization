@@ -1,8 +1,8 @@
 import setuptools
 
 setuptools.setup(
-    name='flowvis',
-    packages=['flowvis'],
+    name='flow_vis',
+    packages=['flow_vis'],
     version='0.1',
     license='MIT',
     author='Tom Runia',
