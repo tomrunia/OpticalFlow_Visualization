@@ -15,8 +15,6 @@ In Proc. IEEE International Conference on Computer Vision (ICCV), 2007.
 
 ## Usage
 
-One-liner:
-
     import flowvis
     flow_color = flowvis.flow_to_color(flow_uv, convert_to_bgr=False)
 
